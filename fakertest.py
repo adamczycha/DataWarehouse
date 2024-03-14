@@ -49,7 +49,7 @@ class Data(Faker):
             writer.writerows(data)
 
     def Department(self)->None:
-        #constants
+       
         self.Department_list=[   
             "Technical Support Department",
             "Customer Care Department",
@@ -64,9 +64,9 @@ class Data(Faker):
         
         self.Department_size=len(self.Department_list)
 
-        # Create Encja
+        
         self.Department_departmentID=[fake.unique.random_int(1,self.Department_size) for i in range (self.Department_size)]
-        # self.Department_id=Faker.random_int(1,self.Department_size)
+        
 
         print(f"\n\n DEPARTMENT SAMPLE HEAD({self.Sample_size})\n\n Department Names {self.Department_list[self.Sample_size:]} \n Department ID {self.Department_departmentID[self.Sample_size:]}")
         
@@ -78,8 +78,7 @@ class Data(Faker):
 
 
     def Employees(self)->None:
-        #Constants
-        # self.Employees_Number = 20
+        
 
         self.Employee_Position_list=[   
             'Help Desk Technician',
@@ -94,7 +93,7 @@ class Data(Faker):
             'User Support Technician']
     
 
-        # Create Encja
+
         self.Employees_EmployeeID=[fake.unique.random_int(1,self.Employees_Number) for i in range (self.Employees_Number)]
 
         self.Employee_Name=[fake.first_name() for i in range(self.Employees_Number)]
@@ -119,10 +118,8 @@ class Data(Faker):
 
     def Customer(self)->None:
 
-        # Constants
-        # self.Customer_Number=5
 
-        # Create Encja
+
         self.Customer_CustomerID=sample(range(1,self.Customer_Number+1),self.Customer_Number)
         # self.Customer_CustomerID=[fake.unique.random_int(1,self.Customer_Number) for i in range (self.Customer_Number)]
       
@@ -166,10 +163,8 @@ class Data(Faker):
             'General Technical Inquiries']
         
         self.Category_Number=len(self.Category_Name)
-        # print(self.Category_Number)
-        # self.Category_CategoryID=[fake.unique.random_int(1,self.Category_Number) for i in range (self.Category_Number)]
+
         self.Category_CategoryID = sample(range(1, self.Category_Number + 1), self.Category_Number)
-        # print(max(self.Category_CategoryID))
 
         print(f"\n\n Category SAMPLE HEAD({self.Sample_size})\n\n Category Names {self.Category_Name[:self.Sample_size]} \n Category ID {self.Category_CategoryID[:self.Sample_size]}")
         data_dict = {
@@ -252,7 +247,7 @@ class Data(Faker):
         self.TicketResolution_ResolutionType=[np.random.choice(self.TicketResolution_ResolutionType_list,p=self.TicketResolution_ResolutionType_weights) for i in range(self.TicketResolution_Number)]
 
         self.TicketResolution_Escalated=[np.random.choice(self.TicketResolution_Escalated_list,p=self.TicketResolution_Escalated_weights) for i in range(self.TicketResolution_Number)]
-
+        
         # self.TicketResolution_CreationDate=[fake.date_between(start_date="'2020-12-04'",end_date='2022-12-04') for i in range(self.TicketResolution_Number)]
         self.TicketResolution_CreationDate=[fake.date() for i in range(self.TicketResolution_Number)]
 
