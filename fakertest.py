@@ -3,26 +3,34 @@ from faker.providers import DynamicProvider
 from random import random, sample
 import numpy as np
 import csv
+from datetime import date
 
+# Do testów 
+fake=Faker()
 class Data(Faker):
-    def __init__(self,) -> None:
-
+    def __init__(self) -> None:
+        #inicjalizacja wszystkich zmiennych:
+        
+        #Do podglądu printf
         self.Sample_size=5
-        self.Ticket_Description_Chars=10
+        self.Ticket_Description_Chars=30
+
+        #ilość wierszy w danej tabeli w danym TimeLine
+
+        self.Ticket_Number=10000
+        self.TicketResolution_Number=10000
+        self.Customer_Number=1000
+        self.Employees_Number= 1000
 
 
-        self.Ticket_Number=10
-        self.TicketResolution_Number=10
-        self.Customer_Number=10
-        self.Employees_Number= 10
+
+        self.Ticket_NumberT2=10000
+        self.TicketResolution_NumberT2=10000
+        self.Customer_NumberT2=1000
+        self.Employees_NumberT2= 1000
 
 
-
-        self.Ticket_NumberT2=10
-        self.TicketResolution_NumberT2=10
-        self.Customer_NumberT2=10
-        self.Employees_NumberT2= 10
-
+    #Zapisywanie do pliku CSV
     def to_csv(self,data_dict, filename):
         with open(filename, 'w', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=data_dict.keys())
@@ -30,29 +38,9 @@ class Data(Faker):
             writer.writerows([dict(zip(data_dict, d)) for d in zip(*data_dict.values())])
 
 
-
-# Repeat the same process for Customer, Category, Ticket, TicketResolution functions
-    def BulkLoadTest(self)->None:
-        import csv
-
-        # Assuming `self.TicketResolution_ResolutionID`, `self.TicketResolution_TicketID`, etc. are lists of data
-        data = list(zip(self.TicketResolution_ResolutionID, self.TicketResolution_TicketID, self.TicketResolution_EmployeeId, self.TicketResolution_ResolutionType, self.TicketResolution_Escalated, self.TicketResolution_CreationDate, self.TicketResolution_ResponseTime, self.TicketResolution_ResolutionTime))
-
-        # Specify the column names
-        fields = ['ResolutionID', 'TicketID', 'EmployeeId', 'ResolutionType', 'Escalated', 'CreationDate', 'ResponseTime', 'ResolutionTime']
-
-        # Writing to csv file
-        with open('TicketResolution.csv', 'w', newline='') as f:
-            writer = csv.writer(f)
-            
-            # Write the column headers
-            writer.writerow(fields)
-            
-            # Write the data
-            writer.writerows(data)
-
     def Department(self)->None:
        
+       #nazwy listy departmentów
         self.Department_list=[   
             "Technical Support Department",
             "Customer Care Department",
@@ -273,7 +261,9 @@ class Data(Faker):
 
         self.Ticket_PriorityT2=[np.random.choice(self.Ticket_Priority_list) for i in range(self.Ticket_NumberT2)]
 
-        self.Ticket_CustomerIDT2=sample(range(1,self.Customer_Number+self.Customer_NumberT2+1),self.Ticket_NumberT2)
+        self.Ticket_CustomerIDT2=[np.random.choice(self.Customer_Number+self.Customer_NumberT2) for i in range(self.Ticket_NumberT2)]
+
+        # self.Ticket_CustomerIDT2=sample(range(1,self.Customer_Number+self.Customer_NumberT2+1),self.Ticket_NumberT2)
 
         self.Ticket_CategoryIDT2=[np.random.choice(self.Category_CategoryID) for i in range(self.Ticket_NumberT2)]
 
@@ -317,7 +307,9 @@ class Data(Faker):
 
         self.TicketResolution_Escalated=[np.random.choice(self.TicketResolution_Escalated_list,p=self.TicketResolution_Escalated_weights) for i in range(self.TicketResolution_Number)]
         
-        self.TicketResolution_CreationDate=[fake.date_this_year() for i in range(self.TicketResolution_Number)]
+        self.TicketResolution_CreationDate=[fake.date_between(start_date=date(2023,1,1),end_date=date(2023,12,31)) for i in range(self.TicketResolution_Number)]
+
+        # self.TicketResolution_CreationDate=[fake.date_this_year() for i in range(self.TicketResolution_Number)]
        
         self.TicketResolution_ResponseTime=[fake.random_int(30,120) for i in range(self.TicketResolution_Number)]
        
@@ -330,15 +322,15 @@ class Data(Faker):
     
         self.TicketResolution_ResolutionIDT2=sample(range(self.TicketResolution_Number+1,self.TicketResolution_NumberT2+self.TicketResolution_Number+1) , self.TicketResolution_NumberT2)
 
-        self.TicketResolution_TicketIDT2 = sample(range(1, self.Ticket_NumberT2+self.Ticket_Number + 1), self.TicketResolution_NumberT2)
+        self.TicketResolution_TicketIDT2 = [np.random.choice(self.Ticket_Number+self.Ticket_NumberT2) for i in range(self.TicketResolution_NumberT2)]
 
-        self.TicketResolution_EmployeeIdT2= sample(range(1,self.Employees_NumberT2+self.Employees_Number+1),self.TicketResolution_NumberT2)
+        self.TicketResolution_EmployeeIdT2= [np.random.choice(self.Employees_Number+self.Employees_NumberT2) for i in range(self.TicketResolution_NumberT2)]
 
         self.TicketResolution_ResolutionTypeT2=[np.random.choice(self.TicketResolution_ResolutionType_list,p=self.TicketResolution_ResolutionType_weights) for i in range(self.TicketResolution_NumberT2)]
 
         self.TicketResolution_EscalatedT2=[np.random.choice(self.TicketResolution_Escalated_list,p=self.TicketResolution_Escalated_weights) for i in range(self.TicketResolution_NumberT2)]
         
-        self.TicketResolution_CreationDateT2=[fake.date_this_year() for i in range(self.TicketResolution_NumberT2)]
+        self.TicketResolution_CreationDateT2=[fake.date_between(start_date=date(2024,1,1),end_date=date(2024,12,31)) for i in range(self.TicketResolution_NumberT2)]
        
         self.TicketResolution_ResponseTimeT2=[fake.random_int(30,120) for i in range(self.TicketResolution_NumberT2)]
        
@@ -389,6 +381,5 @@ data.TicketResolutionBulk()
 #kolejność wgrywania plkiów BULK:
 
 
-# Do testów 
-fake=Faker()
+
 
