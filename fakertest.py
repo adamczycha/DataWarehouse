@@ -368,6 +368,28 @@ class Data(Faker):
         }
         self.to_csv(data_dict, 'TicketResolutionT2.csv')
 
+    def AdditionalSourceCSV(self):
+        self.AdditionalSourceCSV_FollowUpRequired_list=['Yes','No']
+        self.AdditionalSourceCSV_FollowUpRequired_weights=[0.2,0.8]
+
+        self.AdditionalSourceCSV_TicketID = sample(range(1, self.Ticket_Number + 1), self.Ticket_Number)
+        self.AdditionalSourceCSV_FeedbackID= sample(range(1, self.Ticket_Number + 1), self.Ticket_Number)
+        self.AdditionalSourceCSV_SatisfactionLevel= [np.random.randint(1, 10) for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_Feedback=[fake.text(max_nb_chars=self.Ticket_Description_Chars) for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_FollowUpRequired=[np.random.choice(self.AdditionalSourceCSV_FollowUpRequired_list,p=self.AdditionalSourceCSV_FollowUpRequired_weights) for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_CustomerLocation=[fake.country() for i in range(self.Ticket_Number)]
+
+    def AdditionalSourceCSVBulk(self):
+        data_dict = {
+        'FeedbackID': self.AdditionalSourceCSV_FeedbackID,
+        'Satisfaction Level': self.AdditionalSourceCSV_SatisfactionLevel,
+        'Feedback': self.AdditionalSourceCSV_Feedback,
+        'Follow-up Required': self.AdditionalSourceCSV_FollowUpRequired,
+        'Customer Location ': self.AdditionalSourceCSV_CustomerLocation,
+        'Ticket ID': self.AdditionalSourceCSV_TicketID
+        }
+        self.to_csv(data_dict, 'AdditionalSourceCSV.csv')
+
 
 data=Data()
 data.Department()
@@ -380,8 +402,8 @@ data.Ticket()
 data.TicketBulk()
 data.TicketResolution()
 data.TicketResolutionBulk()
-
-#kolejność wgrywania plkiów BULK:
+data.AdditionalSourceCSV()
+data.AdditionalSourceCSVBulk()
 
 
 
