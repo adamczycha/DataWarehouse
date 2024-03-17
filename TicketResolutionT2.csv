@@ -1,0 +1,11 @@
+ResolutionID,TicketID,EmployeeID,ResolutionType,Escalated,CreationDate,ResponseTime,ResolutionTime,Notes
+13,12,9,Processing,false,2024-01-29,44,317,Behind.
+11,16,3,Finished,false,2024-02-26,94,272,Kid.
+18,20,2,Finished,true,2024-01-07,30,198,Party.
+12,2,16,Finished,false,2024-02-09,55,189,Piece.
+17,10,13,Finished,false,2024-01-19,78,122,Bring try.
+19,5,8,Finished,false,2024-01-24,113,141,Series.
+16,9,11,Processing,false,2024-01-02,116,163,Economy.
+20,3,5,Finished,true,2024-02-21,110,194,Relate.
+15,17,6,Finished,false,2024-02-19,51,246,Memory.
+14,14,17,Finished,true,2024-03-13,38,219,Budget.

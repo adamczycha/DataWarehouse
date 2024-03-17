@@ -1,11 +1,11 @@
-Department Names,Department ID
-Technical Support Department,3
-Customer Care Department,7
-IT Solutions Department,1
-Network Operations Center (NOC),4
-Systems Administration Department,9
-Software Engineering Department,6
-Hardware Support Department,8
-Application Support Department,2
-Security Operations Center (SOC),10
-Infrastructure Management Department,5
+DepartmentID,Name
+1,Technical Support Department
+8,Customer Care Department
+3,IT Solutions Department
+7,Network Operations Center (NOC)
+4,Systems Administration Department
+10,Software Engineering Department
+9,Hardware Support Department
+2,Application Support Department
+6,Security Operations Center (SOC)
+5,Infrastructure Management Department

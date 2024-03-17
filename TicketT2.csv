@@ -1,0 +1,11 @@
+TicketID,Title,Description,Priority,CustomerID,CategoryID
+12,Connectivity,Right.,High,20,19
+16,Connectivity,Natural.,High,3,8
+14,Technical,Establish.,High,13,13
+17,Access,Whose.,High,15,14
+19,Setup,Voice.,Low,7,8
+18,Concern,Represent.,Low,11,11
+15,Configuration,Field.,Low,4,9
+11,Error,Affect.,High,12,4
+20,Request,Design.,Low,6,11
+13,Request,Mean win.,Medium,19,7
