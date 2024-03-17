@@ -17,18 +17,16 @@ class Data(Faker):
 
         #ilość wierszy w danej tabeli w danym TimeLine
 
-        self.Ticket_Number=10000
-        self.TicketResolution_Number=10000
-        self.Customer_Number=1000
-        self.Employees_Number= 1000
+        self.Ticket_Number=             20000
+        self.TicketResolution_Number=   20000
+        self.Customer_Number=           500
+        self.Employees_Number=          500
 
 
-
-        self.Ticket_NumberT2=10000
-        self.TicketResolution_NumberT2=10000
-        self.Customer_NumberT2=1000
-        self.Employees_NumberT2= 1000
-
+        self.Ticket_NumberT2=           2000
+        self.TicketResolution_NumberT2= 2000
+        self.Customer_NumberT2=         50
+        self.Employees_NumberT2=        50
 
     #Zapisywanie do pliku CSV
     def to_csv(self,data_dict, filename):
@@ -319,12 +317,17 @@ class Data(Faker):
 
         print(f"\n\n TICKET RESOLUTION SAMPLE HEAD \n\n ResolutionID{self.TicketResolution_ResolutionID[:self.Sample_size]} \n TicketID{self.TicketResolution_TicketID[:self.Sample_size]} \n EmployeeId {self.TicketResolution_EmployeeId[:self.Sample_size]} \n ResolutionType {self.TicketResolution_ResolutionType[:self.Sample_size]} \n Escalated {self.TicketResolution_Escalated[:self.Sample_size]} \n CreationDate {self.TicketResolution_CreationDate[:self.Sample_size]} \n ResponseTime {self.TicketResolution_ResponseTime[:self.Sample_size]} \n ResolutionTime {self.TicketResolution_ResolutionTime[:self.Sample_size]}")
     
-    
+
+
+        # T2
         self.TicketResolution_ResolutionIDT2=sample(range(self.TicketResolution_Number+1,self.TicketResolution_NumberT2+self.TicketResolution_Number+1) , self.TicketResolution_NumberT2)
 
-        self.TicketResolution_TicketIDT2 = [np.random.choice(self.Ticket_Number+self.Ticket_NumberT2) for i in range(self.TicketResolution_NumberT2)]
+        self.TicketResolution_TicketIDT2 = [np.random.randint(1,self.Ticket_Number+self.Ticket_NumberT2) for i in range(self.TicketResolution_NumberT2)]
 
-        self.TicketResolution_EmployeeIdT2= [np.random.choice(self.Employees_Number+self.Employees_NumberT2) for i in range(self.TicketResolution_NumberT2)]
+        # Błędy z występowaniem 0 jako EmployeeID 
+        # self.TicketResolution_EmployeeIdT2= [np.random.choice(self.Employees_Number+self.Employees_NumberT2) for i in range(self.TicketResolution_NumberT2)]
+        
+        self.TicketResolution_EmployeeIdT2 =[np.random.randint(1, self.Employees_Number+self.Employees_NumberT2) for i in range(self.TicketResolution_NumberT2)]
 
         self.TicketResolution_ResolutionTypeT2=[np.random.choice(self.TicketResolution_ResolutionType_list,p=self.TicketResolution_ResolutionType_weights) for i in range(self.TicketResolution_NumberT2)]
 
