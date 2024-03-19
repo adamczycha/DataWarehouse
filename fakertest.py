@@ -17,16 +17,16 @@ class Data(Faker):
 
         #ilość wierszy w danej tabeli w danym TimeLine
 
-        self.Ticket_Number=             20000
-        self.TicketResolution_Number=   20000
+        self.Ticket_Number=             100000
+        self.TicketResolution_Number=   100000
         self.Customer_Number=           500
         self.Employees_Number=          500
 
 
-        self.Ticket_NumberT2=           2000
-        self.TicketResolution_NumberT2= 2000
-        self.Customer_NumberT2=         50
-        self.Employees_NumberT2=        50
+        self.Ticket_NumberT2=           100000
+        self.TicketResolution_NumberT2= 100000
+        self.Customer_NumberT2=         500
+        self.Employees_NumberT2=        500
 
     #Zapisywanie do pliku CSV
     def to_csv(self,data_dict, filename):
@@ -372,12 +372,21 @@ class Data(Faker):
         self.AdditionalSourceCSV_FollowUpRequired_list=['Yes','No']
         self.AdditionalSourceCSV_FollowUpRequired_weights=[0.2,0.8]
 
-        self.AdditionalSourceCSV_TicketID = sample(range(1, self.Ticket_Number + 1), self.Ticket_Number)
-        self.AdditionalSourceCSV_FeedbackID= sample(range(1, self.Ticket_Number + 1), self.Ticket_Number)
-        self.AdditionalSourceCSV_SatisfactionLevel= [np.random.randint(1, 10) for i in range(self.Ticket_Number)]
-        self.AdditionalSourceCSV_Feedback=[fake.text(max_nb_chars=self.Ticket_Description_Chars) for i in range(self.Ticket_Number)]
-        self.AdditionalSourceCSV_FollowUpRequired=[np.random.choice(self.AdditionalSourceCSV_FollowUpRequired_list,p=self.AdditionalSourceCSV_FollowUpRequired_weights) for i in range(self.Ticket_Number)]
-        self.AdditionalSourceCSV_CustomerLocation=[fake.country() for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_TicketID           = sample(range(1, self.Ticket_Number + 1), self.Ticket_Number)
+        self.AdditionalSourceCSV_FeedbackID         = sample(range(1, self.Ticket_Number + 1), self.Ticket_Number)
+        self.AdditionalSourceCSV_SatisfactionLevel  = [np.random.randint(1, 10) for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_Feedback           =[fake.text(max_nb_chars=self.Ticket_Description_Chars) for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_FollowUpRequired   =[np.random.choice(self.AdditionalSourceCSV_FollowUpRequired_list,p=self.AdditionalSourceCSV_FollowUpRequired_weights) for i in range(self.Ticket_Number)]
+        self.AdditionalSourceCSV_CustomerLocation   =[fake.country() for i in range(self.Ticket_Number)]
+
+
+        self.AdditionalSourceCSV_TicketIDT2           = sample(range(self.Ticket_Number+1, self.Ticket_Number+self.Ticket_NumberT2 + 1), self.Ticket_NumberT2)
+        self.AdditionalSourceCSV_FeedbackIDT2         = sample(range(self.Ticket_Number+1, self.Ticket_Number+self.Ticket_NumberT2 + 1), self.Ticket_NumberT2)
+        self.AdditionalSourceCSV_SatisfactionLevelT2  = [np.random.randint(1, 10) for i in range(self.Ticket_NumberT2)]
+        self.AdditionalSourceCSV_FeedbackT2           =[fake.text(max_nb_chars=self.Ticket_Description_Chars) for i in range(self.Ticket_NumberT2)]
+        self.AdditionalSourceCSV_FollowUpRequiredT2   =[np.random.choice(self.AdditionalSourceCSV_FollowUpRequired_list,p=self.AdditionalSourceCSV_FollowUpRequired_weights) for i in range(self.Ticket_NumberT2)]
+        self.AdditionalSourceCSV_CustomerLocationT2   =[fake.country() for i in range(self.Ticket_NumberT2)]
+
 
     def AdditionalSourceCSVBulk(self):
         data_dict = {
@@ -388,8 +397,17 @@ class Data(Faker):
         'Customer Location ': self.AdditionalSourceCSV_CustomerLocation,
         'Ticket ID': self.AdditionalSourceCSV_TicketID
         }
-        self.to_csv(data_dict, 'AdditionalSourceCSV.csv')
+        self.to_csv(data_dict, 'AdditionalSourcesCSV.csv')
 
+        data_dict = {
+        'FeedbackID': self.AdditionalSourceCSV_FeedbackIDT2,
+        'Satisfaction Level': self.AdditionalSourceCSV_SatisfactionLevelT2,
+        'Feedback': self.AdditionalSourceCSV_FeedbackT2,
+        'Follow-up Required': self.AdditionalSourceCSV_FollowUpRequiredT2,
+        'Customer Location ': self.AdditionalSourceCSV_CustomerLocationT2,
+        'Ticket ID': self.AdditionalSourceCSV_TicketIDT2
+        }
+        self.to_csv(data_dict, 'AdditionalSourcesT2CSV.csv')
 
 data=Data()
 data.Department()
