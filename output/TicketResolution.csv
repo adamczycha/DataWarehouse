@@ -1,0 +1,11 @@
+ResolutionID,TicketID,EmployeeID,ResolutionType,Escalated,CreationDate,ResponseTime,ResolutionTime,Notes
+10,4,2,Processing,false,2023-09-25,70,244,Figure training sort.
+4,3,3,Finished,false,2023-07-19,57,202,Memory small family lawyer.
+5,2,1,Finished,false,2023-12-22,67,308,Develop challenge fine point.
+9,1,2,Processing,true,2023-10-25,99,237,Democrat often country note.
+7,6,4,Finished,true,2023-11-23,77,218,Record former beat protect.
+2,10,1,Finished,true,2023-06-09,60,261,Own should head range.
+1,8,3,Finished,true,2023-10-08,35,269,Grow choice rise find.
+3,9,1,Finished,false,2023-11-21,102,223,Case arrive success.
+8,7,5,Finished,true,2023-05-23,63,191,Her like arrive.
+6,5,5,Finished,false,2023-12-18,105,244,Morning like great campaign.

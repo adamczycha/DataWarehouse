@@ -4,7 +4,7 @@ from random import random, sample
 import numpy as np
 import csv
 from datetime import date
-
+import os
 # Do testów 
 fake=Faker()
 class Data(Faker):
@@ -17,19 +17,30 @@ class Data(Faker):
 
         #ilość wierszy w danej tabeli w danym TimeLine
 
-        self.Ticket_Number=             100000
-        self.TicketResolution_Number=   100000
-        self.Customer_Number=           500
-        self.Employees_Number=          500
+        self.Ticket_Number=             10
+        self.TicketResolution_Number=   10
+        self.Customer_Number=           5
+        self.Employees_Number=          5
 
 
-        self.Ticket_NumberT2=           100000
-        self.TicketResolution_NumberT2= 100000
-        self.Customer_NumberT2=         500
-        self.Employees_NumberT2=        500
+        self.Ticket_NumberT2=           10
+        self.TicketResolution_NumberT2= 10
+        self.Customer_NumberT2=         5
+        self.Employees_NumberT2=        5
 
     #Zapisywanie do pliku CSV
-    def to_csv(self,data_dict, filename):
+    # def to_csv(self,data_dict, filename):
+        
+    #     with open(filename, 'w', newline='') as csvfile:
+    #         writer = csv.DictWriter(csvfile, fieldnames=data_dict.keys())
+    #         writer.writeheader()
+    #         writer.writerows([dict(zip(data_dict, d)) for d in zip(*data_dict.values())])
+        
+    def to_csv(self, data_dict, filename):
+        output_folder = "output"
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+        filename = os.path.join(output_folder, filename)
         with open(filename, 'w', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=data_dict.keys())
             writer.writeheader()
