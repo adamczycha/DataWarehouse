@@ -5,13 +5,12 @@ import numpy as np
 import csv
 from datetime import date
 import os
-# Do testów 
 fake=Faker()
+
+
+
 class Data(Faker):
     def __init__(self) -> None:
-        #inicjalizacja wszystkich zmiennych:
-        
-        #Do podglądu printf
         self.Sample_size=5
         self.Ticket_Description_Chars=30
 
@@ -29,12 +28,6 @@ class Data(Faker):
         self.Employees_NumberT2=        500
 
     #Zapisywanie do pliku CSV
-    # def to_csv(self,data_dict, filename):
-        
-    #     with open(filename, 'w', newline='') as csvfile:
-    #         writer = csv.DictWriter(csvfile, fieldnames=data_dict.keys())
-    #         writer.writeheader()
-    #         writer.writerows([dict(zip(data_dict, d)) for d in zip(*data_dict.values())])
         
     def to_csv(self, data_dict, filename):
         output_folder = "output"
