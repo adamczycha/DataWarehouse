@@ -422,11 +422,13 @@ class Data(Faker):
 
 data=Data()
 data.Department()
+data.DepartmentBulk()
 data.Employees()
 data.EmployeesBulk()
 data.Customer()
 data.CustomerBulk()
 data.Category()
+data.CategoryBulk()
 data.Ticket()
 data.TicketBulk()
 data.TicketResolution()

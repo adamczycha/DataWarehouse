@@ -1,6 +1,6 @@
 
 BULK INSERT Customer
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\CustomerT2.csv'
+from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\output\CustomerT2.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -10,7 +10,7 @@ select * from Customer;
 
 
 BULK INSERT Employees
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\EmployeesT2.csv'
+from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\output\EmployeesT2.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -20,7 +20,7 @@ select * from Employees;
 
 
 BULK INSERT Ticket
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\TicketT2.csv'
+from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\output\TicketT2.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -46,7 +46,7 @@ CREATE TABLE TempTicketResolution (
 
 -- Import the data into the temporary table
 BULK INSERT TempTicketResolution
-FROM 'C:\Users\Jakub Machura\source\repos\DataWarehouse\TicketResolutionT2.csv'
+FROM 'C:\Users\Jakub Machura\source\repos\DataWarehouse\output\TicketResolutionT2.csv'
 WITH (
   FORMAT = 'CSV',
   FIRSTROW = 2,
