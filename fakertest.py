@@ -17,16 +17,16 @@ class Data(Faker):
 
         #ilość wierszy w danej tabeli w danym TimeLine
 
-        self.Ticket_Number=             10
-        self.TicketResolution_Number=   10
-        self.Customer_Number=           5
-        self.Employees_Number=          5
+        self.Ticket_Number=             100000
+        self.TicketResolution_Number=   100000
+        self.Customer_Number=           5000
+        self.Employees_Number=          500
 
 
-        self.Ticket_NumberT2=           10
-        self.TicketResolution_NumberT2= 10
-        self.Customer_NumberT2=         5
-        self.Employees_NumberT2=        5
+        self.Ticket_NumberT2=           100000
+        self.TicketResolution_NumberT2= 100000
+        self.Customer_NumberT2=         5000
+        self.Employees_NumberT2=        500
 
     #Zapisywanie do pliku CSV
     # def to_csv(self,data_dict, filename):
