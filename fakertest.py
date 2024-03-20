@@ -394,9 +394,9 @@ class Data(Faker):
         self.AdditionalSourceCSV_TicketIDT2           = sample(range(self.Ticket_Number+1, self.Ticket_Number+self.Ticket_NumberT2 + 1), self.Ticket_NumberT2)
         self.AdditionalSourceCSV_FeedbackIDT2         = sample(range(self.Ticket_Number+1, self.Ticket_Number+self.Ticket_NumberT2 + 1), self.Ticket_NumberT2)
         self.AdditionalSourceCSV_SatisfactionLevelT2  = [np.random.randint(1, 10) for i in range(self.Ticket_NumberT2)]
-        self.AdditionalSourceCSV_FeedbackT2           =[fake.text(max_nb_chars=self.Ticket_Description_Chars) for i in range(self.Ticket_NumberT2)]
-        self.AdditionalSourceCSV_FollowUpRequiredT2   =[np.random.choice(self.AdditionalSourceCSV_FollowUpRequired_list,p=self.AdditionalSourceCSV_FollowUpRequired_weights) for i in range(self.Ticket_NumberT2)]
-        self.AdditionalSourceCSV_CustomerLocationT2   =[fake.country() for i in range(self.Ticket_NumberT2)]
+        self.AdditionalSourceCSV_FeedbackT2           = [fake.text(max_nb_chars=self.Ticket_Description_Chars) for i in range(self.Ticket_NumberT2)]
+        self.AdditionalSourceCSV_FollowUpRequiredT2   = [np.random.choice(self.AdditionalSourceCSV_FollowUpRequired_list,p=self.AdditionalSourceCSV_FollowUpRequired_weights) for i in range(self.Ticket_NumberT2)]
+        self.AdditionalSourceCSV_CustomerLocationT2   = [fake.country() for i in range(self.Ticket_NumberT2)]
 
 
     def AdditionalSourceCSVBulk(self):
