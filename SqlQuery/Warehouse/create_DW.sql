@@ -1,6 +1,10 @@
 use [call_masterDW]
 
-
+CREATE TABLE [Department] (
+  [ID_Department] Int,
+  [Name] varchar(50),
+  PRIMARY KEY ([ID_Department])
+);
 
 CREATE TABLE [Employees] (
   [ID_Employee] Int,
@@ -8,13 +12,8 @@ CREATE TABLE [Employees] (
   [Name] varchar(20),
   [Address] varchar(50),
   [Position] varchar(50),
-  PRIMARY KEY ([ID_Employee])
-);
-
-CREATE TABLE [Department] (
-  [ID_Department] Int,
-  [Name] varchar(50),
-  PRIMARY KEY ([ID_Department])
+  PRIMARY KEY ([ID_Employee]),
+  FOREIGN KEY ([ID_Department]) REFERENCES [Department]([ID_Department])
 );
 
 CREATE TABLE [JUNK] (
@@ -53,15 +52,15 @@ CREATE TABLE [Customer] (
 
 CREATE TABLE [Category] (
   [ID_Category] Int,
-  [Name] varchar(20),
+  [Name] varchar(50),
   PRIMARY KEY ([ID_Category])
 );
 
 CREATE TABLE [Feedback] (
   [ID_feedback] int,
-  [Satisfaction Level] nvarchar (255) NOT NULL CHECK ([Satisfaction Level] IN('_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10')),
+  [Satisfaction Level] nvarchar (255) NOT NULL CHECK ([Satisfaction Level] IN('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')),
   [Feedback] varchar(255),
-  [Follow-up Required] nvarchar (255) NOT NULL CHECK ([Follow-up Required] IN('True', 'False')),
+  [Follow-up Required] nvarchar (255) NOT NULL CHECK ([Follow-up Required] IN('Yes', 'No')),
   [Customer Location ] varchar(255),
   PRIMARY KEY ([ID_feedback])
 );
