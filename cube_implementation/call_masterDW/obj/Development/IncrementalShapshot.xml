@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>call_masterDW</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>ayHPHPmpe0Fq7Mm9ybl+JOWZ98s=14/04/2024 16:03:2014/04/2024 14:35:50</TimeStamp>
+        <ID>
+          <String>Call Master DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>PZSVFBiijeeAg9wpJfmWhUitb4A=14/04/2024 14:36:5114/04/2024 14:36:01</TimeStamp>
+        <ID>
+          <String>Call Master DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6RD/dPtDVAA17k3sFHteFJYYmtQ=14/04/2024 14:54:3514/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GxYz6BRZm5y43Et+LyeuyZmROf8=14/04/2024 14:54:3514/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>W0YYy2OMtWOdhqRj5bqT1CB9H88=14/04/2024 14:54:3514/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>JUNK</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BSbVFnKC5qcOqprRK+1QkCr/LRM=14/04/2024 14:54:3514/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>Feedback</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zmAo+deEu3xi8WcCh8Vv22DenBc=14/04/2024 14:54:3514/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>Ticket Description</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UhXS+sXlFRl/WMZpZOb8JMo8OfQ=14/04/2024 14:54:3514/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6PWUM/91HovbJ/w3vjwB2Q2IOL0=14/04/2024 16:22:0114/04/2024 16:20:38</TimeStamp>
+        <ID>
+          <String>Ticket Resolution</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tjBKuweR/H8mF8chX0gp0jsP8wA=14/04/2024 16:24:3014/04/2024 16:24:30</TimeStamp>
+        <ID>
+          <String>Employees</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SCfj4QxD/j+v+3D5Pc1/uNO5/nQ=14/04/2024 16:25:1014/04/2024 16:25:10</TimeStamp>
+        <ID>
+          <String>Department</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>RvK0ig/W80eqOJViuDgssQ6K8uE=14/04/2024 16:32:0514/04/2024 14:36:51bq7S/MSFVj2qtSCMb+2tPxloYmw=14/04/2024 14:36:5114/04/2024 14:36:51</TimeStamp>
+        <ID>
+          <String>Call Master DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>B3hm4TkRGpcYd4YyDIoM622apGA=14/04/2024 14:35:2214/04/2024 14:35:22</TimeStamp>
+      <ID>
+        <String>call_masterDW</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-04-14T14:32:07.456667Z</LastDeployed>
+</DeploymentSnapshot>
