@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{10207D13-A3A6-44A2-975E-40579A7A3962}|call_masterDW.dwproj|solutionrelative:Call Master DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{10207D13-A3A6-44A2-975E-40579A7A3962}|call_masterDW.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{10207D13-A3A6-44A2-975E-40579A7A3962}|call_masterDW.dwproj|solutionrelative:Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{10207D13-A3A6-44A2-975E-40579A7A3962}|call_masterDW.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Call Master DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{10207D13-A3A6-44A2-975E-40579A7A3962}|call_masterDW.dwproj|solutionrelative:Call Master DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
@@ -26,31 +30,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Date.dim",
+              "RelativeDocumentMoniker": "Date.dim",
+              "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Date.dim [Design]",
+              "RelativeToolTip": "Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-16T16:59:09.271Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Call Master DW.dsv [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Call Master DW.dsv",
               "RelativeDocumentMoniker": "Call Master DW.dsv",
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Call Master DW.dsv [Design]",
               "RelativeToolTip": "Call Master DW.dsv [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-14T14:28:54.632Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-14T14:28:54.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Department.dim [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Department.dim",
               "RelativeDocumentMoniker": "Department.dim",
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\Department.dim [Design]",
               "RelativeToolTip": "Department.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-14T14:25:10.743Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-14T14:25:10.743Z"
             },
             {
               "$type": "Document",
@@ -66,15 +80,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TicketID.dim [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\TicketID.dim",
               "RelativeDocumentMoniker": "TicketID.dim",
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW\\TicketID.dim [Design]",
               "RelativeToolTip": "TicketID.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-14T14:21:41.05Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-14T14:21:41.05Z"
             }
           ]
         }

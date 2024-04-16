@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f2383077-edf8-48be-b038-00a2aa25e638" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="995b900f-f5a0-4461-bbe8-1faae640ea8b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Call Master DW</ID>
   <Name>Call Master DW</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -315,170 +315,170 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="2caa0e16-fcec-4a58-808a-e421aa78bc48">
+    <Dimension dwd:design-time-name="48e1b16c-bb7c-4d0f-9860-8b096e4c733e">
       <ID>Category</ID>
       <Name>Category</Name>
       <DimensionID>Category</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="c638ad9a-7baa-4a36-8235-80bb2129ccac">
+        <Attribute dwd:design-time-name="a07b74dd-def9-40dc-8991-6b31c769b845">
           <AttributeID>ID Category</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b3b34c64-6fc5-4180-92b7-55809285635f">
+        <Attribute dwd:design-time-name="ec079e21-147a-4c93-a047-b56b98ff0824">
           <AttributeID>Name</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="1bde480c-c137-491d-8a36-694e803b37e9">
+    <Dimension dwd:design-time-name="e13340e9-d284-41d0-ab9d-1d5361dcf505">
       <ID>Date</ID>
       <Name>Date</Name>
       <DimensionID>Date</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="983baf62-ba21-4a2d-92be-92a4df8f1023">
+        <Attribute dwd:design-time-name="ee94790d-3c76-45cc-9891-cd14bd7c6ec1">
           <AttributeID>ID Creation Date</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="653c9144-f691-42c1-9e36-3a2572c1971a">
+        <Attribute dwd:design-time-name="5f81bcac-16ff-4f83-a083-641abded8744">
           <AttributeID>Creation Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7273550e-8a66-4067-9bb9-1d46bb2e21a2">
+        <Attribute dwd:design-time-name="8e417b87-7fa1-4d78-855d-ba013481e166">
           <AttributeID>Creation Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e8d238e5-62fb-48d1-bd64-6bdc94a925b4">
+        <Attribute dwd:design-time-name="536f55e5-e4d5-4129-8e08-6b5b440c84a2">
           <AttributeID>Creation Month</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="02ffe5c8-2ebe-489f-8de6-fad64313c02f">
+        <Hierarchy dwd:design-time-name="48657faf-991b-4c00-9118-8e09fc4704fa">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="cf464416-7ad1-4fe1-9227-6aa0301b4e90">
+    <Dimension dwd:design-time-name="e08cf6b8-2e55-40d4-ae21-c8ca992046e9">
       <ID>JUNK</ID>
       <Name>JUNK</Name>
       <DimensionID>JUNK</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="a8c56ba1-1ae7-4088-82e4-80471a2011a2">
+        <Attribute dwd:design-time-name="d14ebf9f-3410-4f89-b48c-b80d22f7ac1a">
           <AttributeID>ID Junk</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a97c0303-11ce-4fb8-be54-d24e8659c20e">
+        <Attribute dwd:design-time-name="58ab55d1-f441-4b46-a114-bde5234f41cf">
           <AttributeID>Priority</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a74be16f-b4c9-4cdb-b0cf-b0c8f6bf3b0c">
+        <Attribute dwd:design-time-name="7a724262-4b27-4769-9f8d-773af5894357">
           <AttributeID>Escalated</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6896d5f1-20ff-4997-abb0-c50e551cb689">
+        <Attribute dwd:design-time-name="f373b2de-7ce1-4896-841a-5c74ffee3beb">
           <AttributeID>Resolution Type</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="a6217276-027b-46e7-86d4-e43459f62a27">
+    <Dimension dwd:design-time-name="3067a5d5-46d5-4fc0-945a-3589b3e5fdb0">
       <ID>Ticket Description</ID>
       <Name>Ticket Description</Name>
       <DimensionID>Ticket Description</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="2f2fbb94-0e86-4ec7-b1f1-9861aaf802cc">
+        <Attribute dwd:design-time-name="5aa58fe0-071e-45a5-91fe-090154200e5f">
           <AttributeID>ID Description</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ac53dec1-2f46-4eba-8fd4-68f471ea276c">
+        <Attribute dwd:design-time-name="9a038325-827f-4bea-ad65-81cd634fd6ba">
           <AttributeID>Notes</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6e79a2db-140a-44d1-9993-8f307dc1fb62">
+        <Attribute dwd:design-time-name="9c409720-6aca-4479-8179-d225509bcf41">
           <AttributeID>Description</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="58c7ac2c-6946-4f61-a929-355af88b5552">
+        <Attribute dwd:design-time-name="1fc9df51-d7be-4c96-bb97-19cb0475a8df">
           <AttributeID>Title</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="ec09b7f5-4ec7-42bf-9cf7-4d3370a809e4">
+    <Dimension dwd:design-time-name="61273fd6-573e-43eb-aab0-80e6b3318f9c">
       <ID>Customer</ID>
       <Name>Customer</Name>
       <DimensionID>Customer</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4c8b0481-7314-4708-9f64-ca9cfefd2d7a">
+        <Attribute dwd:design-time-name="c0655204-9a8a-4e81-acc7-3de8303999f5">
           <AttributeID>ID Customer</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0c089b5a-79ee-4119-8b4d-d38e87b73ea1">
+        <Attribute dwd:design-time-name="5b50e2bb-e144-499e-ab96-e66a3601dfda">
           <AttributeID>Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5b3a9254-16be-4afb-87e6-aec65f2fc3fe">
+        <Attribute dwd:design-time-name="5fb764ec-5315-43f9-9dbb-12e5f8867614">
           <AttributeID>E-mail</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a2f52c68-2f41-463e-98f4-28b92ceddb12">
+        <Attribute dwd:design-time-name="b53043d9-261a-46e1-bd30-3a0800ff9a46">
           <AttributeID>Phone</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="df1be6f2-d61f-4526-9d4c-0f1ddbe67410">
+    <Dimension dwd:design-time-name="c9cfd0bb-dc42-4336-bbbd-b86819c51d8d">
       <ID>Feedback</ID>
       <Name>Feedback</Name>
       <DimensionID>Feedback</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="747634ac-a726-4426-997d-67a97837d69d">
+        <Attribute dwd:design-time-name="3517f60c-97ab-4c61-aff0-0495ec7e2846">
           <AttributeID>ID Feedback</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ae191468-072f-4076-b2af-9a4c4c2a63e4">
+        <Attribute dwd:design-time-name="f98d752b-2a60-4baf-a594-696c5725cfae">
           <AttributeID>Satisfaction Level</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ad411a20-7d4e-4735-b415-3d12ba0b98aa">
+        <Attribute dwd:design-time-name="d61d5239-53d2-48b1-91b3-43143c6b7825">
           <AttributeID>Feedback</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="611fae6f-21bd-4ee4-a22a-0fe7ae949208">
+        <Attribute dwd:design-time-name="36e719e4-2604-423a-b110-d092849b7aba">
           <AttributeID>Follow-up Required</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4b2f67a1-3e61-4757-a162-52ef22d2d78a">
+        <Attribute dwd:design-time-name="6ff5168a-112b-41cd-a869-3959a42c467c">
           <AttributeID>Customer Location</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="ee79bd72-1ff7-4ea1-bc59-7d3df2b4ca3e">
+    <Dimension dwd:design-time-name="1cf5b420-cf61-45f4-b019-12f8524ab059">
       <ID>TicketID</ID>
       <Name>TicketID</Name>
       <DimensionID>Ticket Resolution</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="2b08da80-ec49-435c-9f15-6818187404a8">
+        <Attribute dwd:design-time-name="a8af6e9a-e2ef-4dd0-9278-30db60a72fe7">
           <AttributeID>Ticket ID</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="8bc6ae54-c6e1-43da-a4d1-1721e2768e38">
+    <Dimension dwd:design-time-name="9f1955fd-c84b-4016-98f8-6006b8ee2c5d">
       <ID>Employees</ID>
       <Name>Employees</Name>
       <DimensionID>Employees</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="2a6b2f77-be46-44df-afc1-f79cf92bfc3a">
+        <Attribute dwd:design-time-name="404b2863-1d71-4a4e-960c-b3dce913eac6">
           <AttributeID>ID Employee</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="efc733ee-07d2-4229-9d0f-002ea20c7db4">
+        <Attribute dwd:design-time-name="9a631d15-b4e5-4d09-8786-a899015b0113">
           <AttributeID>Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="af7459a4-fad9-4850-ae8c-9d9bba7c128b">
+        <Attribute dwd:design-time-name="f277153a-9334-4c38-b59d-12beaab70d6a">
           <AttributeID>Address</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ae3c4392-bf0b-4f18-8b52-745732fe2ea4">
+        <Attribute dwd:design-time-name="9e5b66f7-e232-4045-9714-ef47faf5f47d">
           <AttributeID>Position</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="37918907-4b62-4151-a9c7-cba0f0935487">
+        <Attribute dwd:design-time-name="e7adc6ba-5f37-410e-9f39-f3fbe93bc888">
           <AttributeID>ID Department</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="01249496-677b-4d92-9c45-bee1895f0a7c">
+    <Dimension dwd:design-time-name="e69d7304-a907-4563-acec-3104668c8fb1">
       <ID>Department</ID>
       <Name>Department</Name>
       <DimensionID>Department</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="c5ed2159-f551-4b90-934d-7806628b9db1">
+        <Attribute dwd:design-time-name="b6503dbe-22c1-4b73-b0a8-c9687ce20b7d">
           <AttributeID>ID Department</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1493ef92-e5f9-433e-af11-ed93a28736df">
+        <Attribute dwd:design-time-name="9501304b-87ab-4364-87d8-a2862fa0363e">
           <AttributeID>Name</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="6ffeea81-fe82-4a13-b16f-c9276c2b2f2b">
+    <MeasureGroup dwd:design-time-name="849df626-a501-4cbc-ab19-de74630ffaa3">
       <ID>Ticket Resolution</ID>
       <Name>Ticket Resolution</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -486,35 +486,35 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="d0d77709-75cb-49ea-b147-c92bf241f7db">
+        <Measure dwd:design-time-name="9624628f-8b41-47cf-8b77-f0ba9de0de0e">
           <ID>Respone Time</ID>
           <Name>number_tickets</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="25898d3e-4a5e-493d-ae23-e32d60112a07">
+          <Source dwd:design-time-name="5acd0094-26b9-4c57-8f68-844f473a956b">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="093f8ce7-60b6-4bc7-beba-5898e0a7288e">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="06cf925c-8d34-4850-975e-63b017e2f1b7">
               <TableID>dbo_TicketResolution</TableID>
               <ColumnID>TicketID</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="66247ead-987d-4eeb-a380-b70fdf314eab">
+        <Measure dwd:design-time-name="a97a7212-9d10-4b16-84b5-5cea13f80547">
           <ID>Resolution Time</ID>
           <Name>sum_resolutionTime</Name>
-          <Source dwd:design-time-name="3e97ff0d-1646-433e-8b9d-8dd17abb0900">
+          <Source dwd:design-time-name="d5d7be46-7727-4458-8651-8763da37d6cc">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="c301f67f-324f-4366-aea8-bc423251aed1">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="75a3d25a-9113-4189-921d-976a5bf2e94b">
               <TableID>dbo_TicketResolution</TableID>
               <ColumnID>ResolutionTime</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="1ba6ad23-49c1-4625-b62e-13844018305b">
+        <Measure dwd:design-time-name="0dea249a-c688-4474-a710-ce61a9fd637b">
           <ID>Ticket ID</ID>
           <Name>sum_responseTime</Name>
-          <Source dwd:design-time-name="a9a151cf-445f-4b50-a4f8-4cc37b9b69fc">
+          <Source dwd:design-time-name="0b7fddd1-784d-48b1-b4f9-089ca3f0beb8">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="76f55f4c-7466-4ba7-a82c-ee754faa6016">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="74b4c519-6dac-4c41-bac5-9f64ffc21e0e">
               <TableID>dbo_TicketResolution</TableID>
               <ColumnID>ResponeTime</ColumnID>
             </Source>
@@ -524,16 +524,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="309c36a7-24cd-4e0d-b85f-f44da0723076">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="24180014-8929-4198-8ca8-97fbcb4ab9bb">
           <CubeDimensionID>Category</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="94f6b540-40ff-47e6-8f4d-03e9c2db7db2">
+            <Attribute dwd:design-time-name="140935c5-a905-4d18-8d51-50e298ecbb1a">
               <AttributeID>ID Category</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="c30af5de-1873-4696-8dab-3f7a5cf90b2d">
+                <KeyColumn dwd:design-time-name="ffa3a998-d8c7-432e-8650-7cfce0a141a0">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8043e658-f2f4-4980-8b67-6e56557e57f8">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="55e4fd7d-0421-4936-b0d2-6418e52ecf74">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_Category</ColumnID>
                   </Source>
@@ -543,16 +543,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aa065e79-49f3-46cf-a1d0-1a0148d3d704">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2435dd2f-180d-42dc-a7e0-7ce0d4ceebbd">
           <CubeDimensionID>Date</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="5039fa06-f31a-4aae-8c2a-86975cef9582">
+            <Attribute dwd:design-time-name="6adae67e-a9e0-4852-8a73-6a342555f878">
               <AttributeID>ID Creation Date</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="69b03ccb-8ed4-4e69-b258-2dabd49d83e9">
+                <KeyColumn dwd:design-time-name="ae96af80-ae50-4cb6-b6be-b927a7dfca6a">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b5f3ece5-c057-4a50-bd7b-ee2c00c84365">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="defadf36-4a9e-4c46-b180-41bd6a188d06">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_creation_date</ColumnID>
                   </Source>
@@ -562,16 +562,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9fa802b4-2519-4ae0-927c-68f79c326d95">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cdb5229d-99d1-4aea-998b-a91c264e2ecd">
           <CubeDimensionID>JUNK</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="54bc7a1f-55c0-445d-8654-a90fe7850f6a">
+            <Attribute dwd:design-time-name="05209bdd-ed6a-4823-a4d3-467e6fefe51d">
               <AttributeID>ID Junk</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="152dc802-6949-48a6-8beb-6aaaab7d1c24">
+                <KeyColumn dwd:design-time-name="8268885e-61b9-4599-a074-02faf01d3bcb">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5dfdf7f9-80ff-4148-92b7-6dba3cc9157c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9cd7087-cf62-4c49-b975-2e296c5c7df2">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_Junk</ColumnID>
                   </Source>
@@ -581,16 +581,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="714a933e-ab1e-4ac0-8f0e-d98c986c07df">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3c3cb546-e0ed-4338-bd10-0bf7d3cce960">
           <CubeDimensionID>Feedback</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9b79baae-02b5-4341-b222-fb4b70ade977">
+            <Attribute dwd:design-time-name="7061b7d1-fd6b-4f85-893c-5e3994d69596">
               <AttributeID>ID Feedback</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="812a67d1-1eec-48de-9873-18e86e2bef75">
+                <KeyColumn dwd:design-time-name="cd9ae2c7-2ca2-45b0-a6ef-cdfffc0da5de">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdf67dec-b22d-4a8a-992d-aa76c1a15ee2">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e673b8c1-eb58-48a2-bd30-1d5fd6527d9d">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_Feedback</ColumnID>
                   </Source>
@@ -600,16 +600,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="636bd8c4-75b3-4960-9d71-7ee8f5f67c0f">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="30fe3bd2-c72f-4d7b-8994-520be49edb3f">
           <CubeDimensionID>Ticket Description</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="985739e0-da6c-43a8-9855-0a8e694b8392">
+            <Attribute dwd:design-time-name="02a974f4-86e8-45be-8612-aec37933fef1">
               <AttributeID>ID Description</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="193c2251-a321-4716-8ed1-f9cb8432ccea">
+                <KeyColumn dwd:design-time-name="2f8c45a9-8b0b-4917-b6ce-e8234690b31e">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8fcbe78e-8d09-40fe-a9c2-f8db41de449a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a997ce6a-60be-414b-b5f5-efd95705e029">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_Description</ColumnID>
                   </Source>
@@ -619,16 +619,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d48e4b73-6623-413f-9a81-1ea5b6499768">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe36957a-7f33-4f7f-a2b8-a80a4761106a">
           <CubeDimensionID>Customer</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="c9258225-d6a3-4884-a7e0-662906be333c">
+            <Attribute dwd:design-time-name="11458e3f-c2cb-4630-81fe-b6a09f55971a">
               <AttributeID>ID Customer</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0d693901-5803-4e6f-bf38-e8876fc84fb7">
+                <KeyColumn dwd:design-time-name="890beaed-7bef-4172-8971-837d5542572f">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="12d13203-26b9-4888-97d8-668c19df2244">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b296d5fd-bfb2-4759-a367-e6d4c281e53d">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_Customer</ColumnID>
                   </Source>
@@ -638,15 +638,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4f0a0cfe-fbd1-4c57-99f8-b6d2b4cdcb3b">
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="87d0d4cd-53ed-4b15-81b7-ef1641281ce1">
           <CubeDimensionID>TicketID</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="57075f6e-3288-4776-b07b-6259573b31c8">
+            <Attribute dwd:design-time-name="5857299c-7f3e-4f7f-b149-91aab2c6108a">
               <AttributeID>Ticket ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="655ce640-e705-453e-939f-ea209b67d265">
+                <KeyColumn dwd:design-time-name="17135134-c733-4cb5-86eb-6a2942e7d99b">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bf61737c-1bf7-4fa1-98e0-1aa01a7b89ce">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d223df09-bbad-4df3-a2c9-8c619bcf87b8">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>TicketID</ColumnID>
                   </Source>
@@ -656,16 +656,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9cee4d07-cb50-4e1f-a333-ab1cda256304">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="26c66f6b-f895-413e-afc3-550b7407a514">
           <CubeDimensionID>Employees</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7a9faaad-51b8-4d38-90d2-d14ab154eefc">
+            <Attribute dwd:design-time-name="65fe03ae-62cb-477f-85ea-c558a45b7790">
               <AttributeID>ID Employee</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="a850d155-20e4-4862-8542-34e89f6545df">
+                <KeyColumn dwd:design-time-name="d225784c-25be-407c-bb51-0ec79a2ecb4d">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed5a09fa-451e-4d87-985d-4321ab858205">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98b4f83a-f299-4b3e-9f95-c835f1c50521">
                     <TableID>dbo_TicketResolution</TableID>
                     <ColumnID>ID_Employee</ColumnID>
                   </Source>
@@ -675,10 +675,10 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="868f4909-a667-4128-bcc4-d68341eb9d32">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b4001443-052f-4b92-880c-ed7e65c30a0f">
           <CubeDimensionID>Department</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="78ca7335-40fa-4182-ae6d-5d1b08d5b0de">
+            <Attribute dwd:design-time-name="d85c5fb7-dd5d-4a62-8ad5-c0af06e39b59">
               <AttributeID>ID Department</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -692,7 +692,25 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="464c3f15-b046-458e-a47b-b41c8dd9b9c6">
+  <Source dwd:design-time-name="7613f057-f074-4017-99e2-01c6647e6e05">
     <DataSourceViewID>Call Master DW</DataSourceViewID>
   </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="94bf4ceb-5347-45d6-9e15-f676e7e98747">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CREATE MEMBER CURRENTCUBE.[Measures].avrage_resolutionTime
+ AS sum_resolutionTime/num_tickets, 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].avrage_responseTime
+ AS sum_responseTime/number_tickets, 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
 </Cube>

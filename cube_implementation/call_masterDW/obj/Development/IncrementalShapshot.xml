@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>RvK0ig/W80eqOJViuDgssQ6K8uE=14/04/2024 16:32:0514/04/2024 14:36:51bq7S/MSFVj2qtSCMb+2tPxloYmw=14/04/2024 14:36:5114/04/2024 14:36:51</TimeStamp>
+        <TimeStamp>AFR5ScoXZDiiKg8/svd0w1OJTu0=16/04/2024 23:15:2014/04/2024 14:36:51bq7S/MSFVj2qtSCMb+2tPxloYmw=14/04/2024 14:36:5114/04/2024 14:36:51</TimeStamp>
         <ID>
           <String>Call Master DW</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-04-14T14:32:07.456667Z</LastDeployed>
+  <LastDeployed>2024-04-16T21:15:42.126667Z</LastDeployed>
 </DeploymentSnapshot>
