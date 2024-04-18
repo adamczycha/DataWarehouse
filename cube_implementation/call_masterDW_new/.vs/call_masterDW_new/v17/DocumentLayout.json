@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Call Master DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Department.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Department.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Employees.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Employees.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Call Master DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Call Master DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Ticket ID.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Ticket ID.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Employees.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Employees.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Department.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Department.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Call Master DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|solutionrelative:Call Master DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70510AC6-7B0A-4D06-B7B4-EF47F8EF93DB}|call_masterDW_new.dwproj|C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Ticket Description.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
@@ -58,19 +58,18 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Department.dim [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Department.dim",
               "RelativeDocumentMoniker": "Department.dim",
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Department.dim [Design]",
               "RelativeToolTip": "Department.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:40:38.27Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:40:38.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Employees.dim [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Employees.dim",
               "RelativeDocumentMoniker": "Employees.dim",
@@ -82,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Ticket ID.dim [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Ticket ID.dim",
               "RelativeDocumentMoniker": "Ticket ID.dim",
@@ -94,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Customer.dim [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Customer.dim",
               "RelativeDocumentMoniker": "Customer.dim",
@@ -113,8 +112,7 @@
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Feedback.dim [Design]",
               "RelativeToolTip": "Feedback.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:19:58.616Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:19:58.616Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Date.dim [Design]",
               "RelativeToolTip": "Date.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:19:52.827Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:19:52.827Z"
             },
             {
               "$type": "Document",
@@ -137,8 +134,7 @@
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\JUNK.dim [Design]",
               "RelativeToolTip": "JUNK.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:18:58.177Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:18:58.177Z"
             },
             {
               "$type": "Document",
@@ -149,8 +145,7 @@
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Ticket Description.dim [Design]",
               "RelativeToolTip": "Ticket Description.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:18:50.374Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:18:50.374Z"
             },
             {
               "$type": "Document",
@@ -161,8 +156,7 @@
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Category.dim [Design]",
               "RelativeToolTip": "Category.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:18:45.744Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:18:45.744Z"
             },
             {
               "$type": "Document",
@@ -178,15 +172,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Call Master DW.dsv [Design]",
               "DocumentMoniker": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Call Master DW.dsv",
               "RelativeDocumentMoniker": "Call Master DW.dsv",
               "ToolTip": "C:\\Users\\Marcel\\Documents\\Studia\\data_warehouse\\call_masterDW_new\\Call Master DW.dsv [Design]",
               "RelativeToolTip": "Call Master DW.dsv [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-17T19:17:50.778Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-17T19:17:50.778Z"
             }
           ]
         }
