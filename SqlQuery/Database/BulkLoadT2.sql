@@ -1,4 +1,4 @@
-
+use [raw_call_master]
 BULK INSERT Customer
 from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\output\CustomerT2.csv'
 with (format='CSV',

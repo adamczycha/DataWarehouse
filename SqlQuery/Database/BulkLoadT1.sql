@@ -1,3 +1,4 @@
+use [raw_call_master]
 BULK INSERT Category
 from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\Category.csv'
 with (format='CSV',
