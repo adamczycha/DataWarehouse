@@ -3,15 +3,14 @@
 USE [call_masterDW];
 
 
-DROP TABLE [TicketResolution];
-DROP TABLE [Feedback];
-DROP TABLE [Category];
-DROP TABLE [Customer];
-DROP TABLE [TicketDescription];
-DROP TABLE [Date];
-DROP TABLE [Junk];
-
-DROP TABLE [Employees];
-DROP TABLE [Department];
+DROP TABLE [DimTicketResolution];
+DROP TABLE [DimFeedback];
+DROP TABLE [DimCategory];
+DROP TABLE [DimCustomer];
+DROP TABLE [DimTicketDescription];
+DROP TABLE [DimDate];
+DROP TABLE [DimJunk];
+DROP TABLE [DimEmployees];
+DROP TABLE [DimDepartment];
 
 

@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Database",
+    "\\ETL",
+    "\\Warehouse"
+  ],
+  "SelectedNode": "\\ETL\\run_ETL.sql",
+  "PreviewInSolutionExplorer": false
+}
