@@ -1,3 +1,4 @@
+use [raw_call_master]
 SELECT COUNT(*) 
 FROM Employees 
 WHERE Position = 'Help Desk Administrator';
