@@ -27,6 +27,7 @@ go
 CREATE VIEW vETLCustomer
 AS
 SELECT DISTINCT
+	[CustomerID],
 	[Name],
 	[Email],
 	dbo.FormatPhoneNumber(Phone) as phone
@@ -35,16 +36,18 @@ FROM [raw_call_master].dbo.[Customer]
 ;
 go
 
-MERGE INTO Customer as TT
+MERGE INTO DimCustomer as TT
 	USING vETLCustomer as ST
 		ON TT.Name = ST.Name
 		AND	TT.[E-mail] = ST.[Email]
 		AND TT.[Phone] = ST.phone
+		AND TT.ID_Customer = ST.CustomerID
 
 			WHEN Not Matched
 				THEN
 					INSERT
 					Values (
+					ST.CustomerID,
 					ST.Name,
 					ST.[Email],
 					ST.Phone
