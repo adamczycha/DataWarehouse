@@ -1,21 +1,21 @@
 CategoryID,Name
-19,Software Issues
-16,Hardware Issues
-1,Network Connectivity Problems
-3,Email Configuration and Troubleshooting
-12,Printer and Peripheral Setup/Issues
-2,Account Access and Permissions
-13,Password Resets
-5,Application Errors
-20,Virus and Malware Removal
-11,Data Backup and Restoration
-6,System Performance Degradation
-8,Mobile Device Setup and Troubleshooting
-4,Software Installation and Updates
-14,Security Concerns
-18,Training and User Guidance
-7,Remote Access Support
-15,Licensing and Software Activation
-10,System Updates and Patch Management
-17,Website Access and Navigation Assistance
-9,General Technical Inquiries
+5,Software Issues
+6,Hardware Issues
+11,Network Connectivity Problems
+2,Email Configuration and Troubleshooting
+3,#printer and Peripheral Setup/Issues
+8,Account Access and Permissions
+10,Password Resets
+1,Application Errors
+19,Virus and Malware Removal
+17,Data Backup and Restoration
+9,System Performance Degradation
+20,Mobile Device Setup and Troubleshooting
+7,Software Installation and Updates
+12,Security Concerns
+13,Training and User Guidance
+15,Remote Access Support
+16,Licensing and Software Activation
+14,System Updates and Patch Management
+4,Website Access and Navigation Assistance
+18,General Technical Inquiries

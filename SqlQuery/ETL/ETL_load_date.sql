@@ -7,7 +7,7 @@ Declare @StartDate date;
 Declare @EndDate date;
 
 -- Step b:  Fill the variable with values for the range of years needed
-SELECT @StartDate = '2023-01-01', @EndDate = '2023-12-31';
+SELECT @StartDate = '2023-01-01', @EndDate = '2024-12-31';
 
 -- Step c:  Use a while loop to add dates to the table
 Declare @DateInProcess datetime = @StartDate;

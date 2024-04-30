@@ -1,11 +1,11 @@
 DepartmentID,Name
-3,Technical Support Department
+10,Technical Support Department
 7,Customer Care Department
-1,IT Solutions Department
-9,Network Operations Center (NOC)
-10,Systems Administration Department
-4,Software Engineering Department
-5,Hardware Support Department
-2,Application Support Department
+9,IT Solutions Department
+1,Network Operations Center (NOC)
+2,Systems Administration Department
+6,Software Engineering Department
+4,Hardware Support Department
+5,Application Support Department
 8,Security Operations Center (SOC)
-6,Infrastructure Management Department
+3,Infrastructure Management Department
