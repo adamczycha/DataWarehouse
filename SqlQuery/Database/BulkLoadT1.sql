@@ -1,6 +1,6 @@
 use [raw_call_master]
 BULK INSERT Category
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\Category.csv'
+from 'C:\Users\Marcel\Documents\Studia\data_warehouse\Schemas\DataWarehouse_git_rep_now\output\Category.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -9,7 +9,7 @@ with (format='CSV',
 select * from Category;
 
 BULK INSERT Customer
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\Customer.csv'
+from 'C:\Users\Marcel\Documents\Studia\data_warehouse\Schemas\DataWarehouse_git_rep_now\output\Customer.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -18,7 +18,7 @@ with (format='CSV',
 select * from Customer;
 
 BULK INSERT Department
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\Department.csv'
+from 'C:\Users\Marcel\Documents\Studia\data_warehouse\Schemas\DataWarehouse_git_rep_now\output\Department.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -28,7 +28,7 @@ select * from Department;
 
 
 BULK INSERT Employees
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\Employees.csv'
+from 'C:\Users\Marcel\Documents\Studia\data_warehouse\Schemas\DataWarehouse_git_rep_now\output\Employees.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -38,7 +38,7 @@ select * from Employees;
 
 
 BULK INSERT Ticket
-from 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\Ticket.csv'
+from 'C:\Users\Marcel\Documents\Studia\data_warehouse\Schemas\DataWarehouse_git_rep_now\output\Ticket.csv'
 with (format='CSV',
 		FIRSTROW=2,
 		FIELDTERMINATOR=',',
@@ -64,7 +64,7 @@ CREATE TABLE TempTicketResolution (
 
 -- Import the data into the temporary table
 BULK INSERT TempTicketResolution
-FROM 'C:\Users\Jakub Machura\source\repos\DataWarehouse\SqlQuery\TicketResolution.csv'
+FROM 'C:\Users\Marcel\Documents\Studia\data_warehouse\Schemas\DataWarehouse_git_rep_now\output\TicketResolution.csv'
 WITH (
   FORMAT = 'CSV',
   FIRSTROW = 2,
