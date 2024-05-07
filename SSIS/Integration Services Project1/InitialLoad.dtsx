@@ -1,0 +1,356 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/7/2024 1:07:41 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-98LF9JC"
+  DTS:CreatorName="DESKTOP-98LF9JC\Jakub Machura"
+  DTS:DTSID="{9708732D-A8C1-4858-889B-6A9EDF7FD40D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="InitialLoad"
+  DTS:PackageType="5"
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{70CF5996-5461-41AC-8421-7633B941F292}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-98LF9JC.call_masterDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3D1F0BC7-B8F9-4067-B8AE-FECBFDDA3755}"
+      DTS:ObjectName="DESKTOP-98LF9JC.call_masterDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-98LF9JC;Initial Catalog=call_masterDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{3D1F0BC7-B8F9-4067-B8AE-FECBFDDA3755}DESKTOP-98LF9JC.call_masterDW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-98LF9JC\MSSQLSERVERDW]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{A9E39FCF-6F50-4D60-82BF-532F36AAD248}"
+      DTS:ObjectName="DESKTOP-98LF9JC\MSSQLSERVERDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=DESKTOP-98LF9JC\MSSQLSERVERDW;User ID=wojna.machura@gmail.com;Provider=MSOLAP.8;Persist Security Info=True;Impersonation Level=Impersonate;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUwvX4KtOAU+EPTCF6fE0TQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACI19/QpwK1yZcPrFmSdtLQI24MlGcpzv+eMkYjZ42hSQAAAAAOgAAAAAIAACAAAADTA69hQ72S1CLNy7CmiT/oYAsc1rp8ujUki7gjwcL5KyAAAAC4PSdwLENQ6ZFDU791p9/JyH5JowUMoK5xsFXSAv6JA0AAAAABHd4vFRqLi18vREr8PDg8VRmH7DzrkE9NloIoJrqnSPNC6toF3E5sG+D5WxDfgn/e8OD58K7q4WZ118H1WjM5</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ETL_load_junk.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{0F70D509-6782-4247-8ABE-D531F0CA4F52}"
+      DTS:ObjectName="ETL_load_junk.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Jakub Machura\source\repos\Machmurka\DataWarehouse\SqlQuery\ETL\ETL_load_junk.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Analysis Services Processing Task"
+      DTS:CreationName="Microsoft.DTSProcessingTask"
+      DTS:Description="Analysis Services Processing Task"
+      DTS:DTSID="{0C7C60EB-0F5B-412A-BDF3-CB0D681F1C2A}"
+      DTS:ExecutableType="Microsoft.DTSProcessingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Analysis Services Processing Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASProcessingData
+          ConnectionName="DESKTOP-98LF9JC\MSSQLSERVERDW"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;call_master_keys&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Dim Date&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;call_master_keys&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Dim Category&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;call_master_keys&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Dim Department&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;call_master_keys&lt;/DatabaseID&gt;&#xA;      &lt;DimensionID&gt;Dim JUNK&lt;/DimensionID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessUpdate&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Category"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2465efc9-c2b2-4866-9641-91665a4283ad}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Category"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0E8EC841-5107-4110-AEF8-8D725E026275}"
+          SQLTask:SqlStatementSource="USE call_masterDW&#xA;GO&#xA;&#xA;If (object_id('vETLCategory') is not null) Drop View vETLCategory;&#xA;go&#xA;CREATE VIEW vETLCategory&#xA;AS&#xA;SELECT DISTINCT&#xA; [CategoryID],&#xA; [Name]&#xA;FROM [raw_call_master].dbo.[Category]&#xA;;&#xA;go&#xA;&#xA;MERGE INTO DimCategory as TT&#xA; USING vETLCategory as ST&#xA;  ON TT.Name = ST.Name&#xA;  AND TT.ID_Category = ST.CategoryID&#xA;   WHEN Not Matched&#xA;    THEN&#xA;     INSERT&#xA;     Values (&#xA;     ST.CategoryID,&#xA;     ST.Name&#xA;     &#xA;     )&#xA;   WHEN Not Matched By Source&#xA;    Then&#xA;     DELETE&#xA;   ;&#xA;&#xA;Drop View vETLCategory;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Date to Call_masterDW"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{DF468E79-3647-4038-8760-1123BF3832D6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Date to Call_masterDW"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0E8EC841-5107-4110-AEF8-8D725E026275}"
+          SQLTask:SqlStatementSource="use call_masterDW&#xA;go&#xA;&#xA;-- Fill DimDates Lookup Table&#xA;-- Step a: Declare variables use in processing&#xA;Declare @StartDate date; &#xA;Declare @EndDate date;&#xA;&#xA;-- Step b:  Fill the variable with values for the range of years needed&#xA;SELECT @StartDate = '2023-01-01', @EndDate = '2024-12-31';&#xA;&#xA;-- Step c:  Use a while loop to add dates to the table&#xA;Declare @DateInProcess datetime = @StartDate;&#xA;&#xA;While @DateInProcess &lt;= @EndDate&#xA;&#x9;Begin&#xA;&#x9;--Add a row into the date dimension table for this date&#xA;&#x9;&#x9;Insert Into [dbo].[DimDate]&#xA;&#x9;&#x9;( [Date]&#xA;&#x9;&#x9;, [Creation_Day]&#xA;&#x9;&#x9;, [Creation_Month]&#xA;&#x9;&#x9;, [Creation_Year]&#xA;&#x9;&#x9;, [Creation_Month_No]&#xA;&#x9;&#x9;)&#xA;&#x9;&#x9;Values ( &#xA;&#x9;&#x9;  @DateInProcess -- [Date]&#xA;&#x9;&#x9;  , Cast( Day(@DateInProcess) as int)&#xA;&#x9;&#x9;  , Cast( DATENAME(month, @DateInProcess) as varchar(10)) -- [Month]&#xA;&#x9;&#x9;  , Cast( Year(@DateInProcess) as int) -- [Year]&#xA;&#x9;&#x9;  , Cast( Month(@DateInProcess) as int) -- [MonthNo]&#xA;&#x9;&#x9;);  &#xA;&#x9;&#x9;-- Add a day and loop again&#xA;&#x9;&#x9;Set @DateInProcess = DateAdd(d, 1, @DateInProcess);&#xA;&#x9;End&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Department"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{f00bf284-d87d-43cb-9142-bf7a8b33447a}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Department"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0E8EC841-5107-4110-AEF8-8D725E026275}"
+          SQLTask:SqlStatementSource="USE call_masterDW&#xA;GO&#xA;&#xA;If (object_id('vETLDepartment') is not null) Drop View vETLDepartment;&#xA;go&#xA;CREATE VIEW vETLDepartment&#xA;AS&#xA;SELECT DISTINCT&#xA; [DepartmentID],&#xA; [Name]&#xA;FROM [raw_call_master].dbo.[Department]&#xA;;&#xA;go&#xA;&#xA;MERGE INTO DimDepartment as TT&#xA; USING vETLDepartment as ST&#xA;  ON TT.Name = ST.Name&#xA;  AND TT.ID_Department = ST.DepartmentID&#xA;   WHEN Not Matched&#xA;    THEN&#xA;     INSERT&#xA;     Values (&#xA;     ST.DepartmentID,&#xA;     ST.Name&#xA;     &#xA;     )&#xA;   WHEN Not Matched By Source&#xA;    Then&#xA;     DELETE&#xA;   ;&#xA;&#xA;Drop View vETLDepartment;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load JUNK to Call_masterDW"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{844088E4-CADD-4E95-B4E0-6B198CFF3B58}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load JUNK to Call_masterDW"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0E8EC841-5107-4110-AEF8-8D725E026275}"
+          SQLTask:SqlStatementSource="USE call_masterDW&#xA;GO&#xA;&#xA;If (object_id('vETLJunk') is not null) Drop View vETLJunk;&#xA;go&#xA;CREATE VIEW vETLJunk&#xA;AS&#xA;SELECT DISTINCT&#xA;&#x9;[TicketResolution].[Escalated],&#xA;&#x9;[Ticket].[Priority],&#xA;&#x9;[TicketResolution].[ResolutionType]&#xA;FROM [raw_call_master].dbo.[TicketResolution], [raw_call_master].dbo.[Ticket]&#xA;;&#xA;go&#xA;&#xA;MERGE INTO DimJunk as TT&#xA;&#x9;USING vETLJunk as ST&#xA;&#x9;&#x9;ON TT.[Escalated] = ST.[Escalated]&#xA;&#x9;&#x9;AND TT.[Priority] = ST.[Priority]&#xA;&#x9;&#x9;AND TT.[ResolutionType] = ST.[ResolutionType]&#xA;&#x9;&#x9;&#x9;WHEN Not Matched&#xA;&#x9;&#x9;&#x9;&#x9;THEN&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;INSERT  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Values (&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;ST.[Priority],&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;CAST(&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;CASE &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;WHEN ST.[Escalated] = 1 THEN 'True'&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;WHEN ST.[Escalated] = 0 THEN 'False'&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;END&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AS varchar(5)),&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;ST.[ResolutionType]&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;)&#xA;&#x9;&#x9;&#x9;WHEN Not Matched By Source&#xA;&#x9;&#x9;&#x9;&#x9;Then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;DELETE&#xA;&#x9;&#x9;&#x9;;&#xA;&#xA;Drop View vETLJunk;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{6D53581F-D2E6-4789-97C6-38381720D028}"
+      DTS:From="Package\Load JUNK to Call_masterDW"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Analysis Services Processing Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{FCD61B18-3367-4661-861D-DFAAE46A518A}"
+      DTS:From="Package\Load Date to Call_masterDW"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Analysis Services Processing Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{91614F92-72BE-477B-8381-85A12824E6EB}"
+      DTS:From="Package\Load Category"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Analysis Services Processing Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{8E111AC7-98EE-4768-A3A5-06E7E43BFFB3}"
+      DTS:From="Package\Load Department"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Analysis Services Processing Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load JUNK to Call_masterDW"
+          TopLeft="290,95" />
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Analysis Services Processing Task"
+          TopLeft="476,323" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="371.5,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="184.833333333333,186"
+              Start="0,0"
+              End="184.833333333333,178.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,106.851634534786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,106.851634534786"
+                    Point2="0,110.851634534786"
+                    Point3="4,110.851634534786" />
+                  <mssgle:LineSegment
+                    End="180.833333333333,110.851634534786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="180.833333333333,110.851634534786"
+                    Point2="184.833333333333,110.851634534786"
+                    Point3="184.833333333333,114.851634534786" />
+                  <mssgle:LineSegment
+                    End="184.833333333333,178.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load Date to Call_masterDW"
+          TopLeft="634,77" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="715.5,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82.8333333333334,204"
+              Start="0,0"
+              End="-82.8333333333334,196.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,117.579212070411" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,117.579212070411"
+                    Point2="0,121.579212070411"
+                    Point3="-4,121.579212070411" />
+                  <mssgle:LineSegment
+                    End="-78.8333333333334,121.579212070411" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-78.8333333333334,121.579212070411"
+                    Point2="-82.8333333333334,121.579212070411"
+                    Point3="-82.8333333333334,125.579212070411" />
+                  <mssgle:LineSegment
+                    End="-82.8333333333334,196.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load Category"
+          TopLeft="465,90" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="546.5,132">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48,191"
+              Start="0,0"
+              End="48,183.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91.5"
+                    Point2="0,95.5"
+                    Point3="4,95.5" />
+                  <mssgle:LineSegment
+                    End="44,95.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44,95.5"
+                    Point2="48,95.5"
+                    Point3="48,99.5" />
+                  <mssgle:LineSegment
+                    End="48,183.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,52"
+          Id="Package\Load Department"
+          TopLeft="829,74" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="910.5,126">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-247.3,197"
+              Start="0,0"
+              End="-247.3,189.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,134.707664884136" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,134.707664884136"
+                    Point2="0,138.707664884136"
+                    Point3="-4,138.707664884136" />
+                  <mssgle:LineSegment
+                    End="-243.3,138.707664884136" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-243.3,138.707664884136"
+                    Point2="-247.3,138.707664884136"
+                    Point3="-247.3,142.707664884136" />
+                  <mssgle:LineSegment
+                    End="-247.3,189.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[DESKTOP-98LF9JC\MSSQLSERVERDW]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
