@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>DESKTOP-98LF9JC\MSSQLSERVERDW</TargetServer>
         <TargetDatabase>call_master_keys</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

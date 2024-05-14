@@ -1,8 +1,8 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
     <Database>call_master_keys</Database>
-    <Server>localhost</Server>
-    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+    <Server>DESKTOP-98LF9JC\MSSQLSERVERDW</Server>
+    <ConnectionString>Data Source=DESKTOP-98LF9JC\MSSQLSERVERDW;Timeout=0</ConnectionString>
   </Target>
   <Options>
     <TransactionalDeployment>false</TransactionalDeployment>
@@ -19,84 +19,84 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>bn66g0KHTQZULBA2KbXeZqmrt0c=21/04/2024 16:31:5821/04/2024 11:55:00</TimeStamp>
+        <TimeStamp>1Q6/gt9QqtRU3E8EWoda/h6nmIY=07.05.2024 13:03:4207.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Call Master DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>zmfDQLoc2dx8lGeQlfvqur25+0M=21/04/2024 16:18:3921/04/2024 16:18:38</TimeStamp>
+        <TimeStamp>QXnY0zpMyYkfYVXZsHiFq72YVJU=13.05.2024 15:20:3607.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Call Master DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>/YJEe33fKk2+OjgpTxLSQ3uUuEg=21/04/2024 16:24:5321/04/2024 16:19:09</TimeStamp>
+        <TimeStamp>/YJEe33fKk2+OjgpTxLSQ3uUuEg=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim JUNK</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>F2smr/tmq4BBf46AVFwKnFpb3sc=21/04/2024 16:55:5021/04/2024 16:19:09</TimeStamp>
+        <TimeStamp>F2smr/tmq4BBf46AVFwKnFpb3sc=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Feedback</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>IEYGDsLkTxci6v31NP7A5pO2MoM=21/04/2024 16:55:5021/04/2024 16:19:09</TimeStamp>
+        <TimeStamp>IEYGDsLkTxci6v31NP7A5pO2MoM=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Category</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>h8DDWC/9IVm2IE6WiAFUJmDzvhM=21/04/2024 16:55:5021/04/2024 16:19:09</TimeStamp>
+        <TimeStamp>h8DDWC/9IVm2IE6WiAFUJmDzvhM=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Customer</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>qbFB5AsqiOq8ZrSi39Uo6LHH+s4=21/04/2024 16:34:0421/04/2024 16:19:09</TimeStamp>
+        <TimeStamp>qbFB5AsqiOq8ZrSi39Uo6LHH+s4=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Ticket Description</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>gvu79QvY+4lnoGg6IIgg9HfmVKI=21/04/2024 16:19:5321/04/2024 16:19:43</TimeStamp>
+        <TimeStamp>gvu79QvY+4lnoGg6IIgg9HfmVKI=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Ticket Resolution</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Vm9FD4+Le5E54dSZipAqhOc/ayE=21/04/2024 16:55:5021/04/2024 16:24:52</TimeStamp>
+        <TimeStamp>Vm9FD4+Le5E54dSZipAqhOc/ayE=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Employees</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>2wV6vOB+r6KVK+IvdRjrotji4A4=21/04/2024 16:55:5021/04/2024 16:25:07</TimeStamp>
+        <TimeStamp>2wV6vOB+r6KVK+IvdRjrotji4A4=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Department</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6MbanZ03x5SmTJd0ns/cbGftvgY=21/04/2024 17:19:4121/04/2024 16:54:11</TimeStamp>
+        <TimeStamp>miMpA75GjO3qRsgjA57J+xRkwo0=13.05.2024 15:20:3607.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Dim Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>zTHoqcuLlhMXztDEhIKVdvy0Mk4=21/04/2024 17:10:4221/04/2024 16:19:09+eHV8fwgmJmZ9sC2d4Ma9zKG5ng=21/04/2024 16:19:0921/04/2024 16:19:09</TimeStamp>
+        <TimeStamp>3z1yZ5zAsIfdsinYUesZ/RpQ+iU=14.05.2024 02:08:0507.05.2024 11:04:01JyqY0TJDi3joKohLAVjKkIiSfZM=14.05.2024 01:33:3507.05.2024 11:04:01</TimeStamp>
         <ID>
           <String>Call Master DW</String>
         </ID>
@@ -104,7 +104,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>setYJBWf/vaRcEnwi6LFrHhUpBw=21/04/2024 11:54:4421/04/2024 11:54:44</TimeStamp>
+      <TimeStamp>setYJBWf/vaRcEnwi6LFrHhUpBw=07.05.2024 11:04:0107.05.2024 11:04:01</TimeStamp>
       <ID>
         <String>call_master_keys</String>
       </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-04-21T15:19:42.003333Z</LastDeployed>
+  <LastDeployed>2024-05-14T00:08:18.47Z</LastDeployed>
 </DeploymentSnapshot>
