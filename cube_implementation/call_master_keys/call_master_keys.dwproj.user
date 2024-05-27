@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>DESKTOP-98LF9JC\MSSQLSERVERDW</TargetServer>
+        <TargetServer>CARBON</TargetServer>
         <TargetDatabase>call_master_keys</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

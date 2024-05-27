@@ -76,7 +76,7 @@
           <ConfigurationSetting>
             <Id>Call Master DW</Id>
             <Name>Call Master DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=call_masterDW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=call_masterDW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
